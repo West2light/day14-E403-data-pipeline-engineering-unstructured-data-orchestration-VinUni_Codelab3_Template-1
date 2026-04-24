@@ -10,7 +10,7 @@ class UnifiedDocument(BaseModel):
     Hợp nhất dữ liệu từ 2 nguồn:
       - Group A (PDF/OCR):   docId, authorName, docCategory, extractedText, createdAt
       - Group B (Video/STT): video_id, creator_name, category, transcript, published_timestamp
-    """
+    """ 
 
     document_id: str = Field(...)
     source_type: str = Field(...)
